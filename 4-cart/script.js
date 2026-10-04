@@ -47,13 +47,13 @@ function addToCart(id) {
       qty: 1,
     });
   }
-  
+
   renderCart();
 }
 
 function increaseQty(id) {
   const item = cart.find((i) => i.id === id);
-  item.qty;
+  item.qty++;
   renderCart();
 }
 
